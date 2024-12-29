@@ -1,5 +1,4 @@
 import { formatViews, timeAgo } from "../utils/helper";
-
 const VideoCard = ({info}) => {
     const {thumbnails,title,channelTitle,publishedAt} = info.snippet;
     const { viewCount = Math.floor(Math.random() * 1000000) } = info.statistics || {};
